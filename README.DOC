@@ -1,0 +1,91 @@
+QUINCY.ZIP  Quincy Version 4.1
+
+This is the second release of Quincy version 4. I introduced the
+project in the May issue of Dr. Dobb's Journal. Quincy is a C
+interprepter with a D-Flat IDE. This zip file contains the source
+code to build Quincy with Borland C++ 3.1 or 4.0.
+
+You will need D-Flat Version 19 or higher to build this program.
+
+Version 4.1 includes these changes:
+
+New features:
+1.  unsigned and short types. short is synonomous with int, but you
+    can declare short int, unsigned short int, etc.
+2.  long double is parsed and converted to double
+3.  concatenated string literals.
+4.  # preprocessor "stringizing" operator.
+5.  ## preprocessor pasting operator.
+6.  assert.h
+7.  errno.h
+8.  time.h
+9.  conio.h
+10. Quincy now recognizes extern, auto, and register declarations.
+
+Bugs fixed:
+1.  Function call as argument did not work properly.
+2.  Macros did not properly expand function calls as arguments.
+3.  Unary minus operator did not work properly on floats.
+4.  Preprocessor did not correctly handle white space between
+    parameters. It would translate do foo() into dofoo().
+5.  prefix ++ and -- did not leave the correct value on the stack.
+6.  The printf format scan could blow up depending on what was in it.
+    Removed it altogether and replaced all printf, scanf calls with 
+    calls to v..printf and v..scanf.
+7.  Quincy did not keep track of mallocs and free them after a program
+    stopped running. Heap would shrink if a program failed to free the
+    memory. Quincy cleans it up now on exit from the program.
+8.  Quincy would abort on a math coprocessor exception, crashing the
+    system because of hooked interrupt vectors. Quincy intercepts and
+    reports math errors now.
+9.  Expressions were not passed properly for stdarg ... arguments.
+    Variables were, but if the expression included operators, the 
+    argument was always passed as a double.
+10. Two unnamed arguments of the same typedef in a prototype generated
+    an error.
+11. Space character constants (' ') in macros did not preprocess properly.
+12. Local arrays were not dereferenced properly.
+13. Structs did not have their own clearly separated namespace, making 
+    this illegal:
+    	int st;
+    	struct st str;
+14. Arrays of typedef variables did not work.
+15. There was a memory leak when errors were found in a header file.
+16. #elif did not work properly
+17. Hex escape sequences in string contants did not translate properly.
+
+Known bugs:
+1. Cannot put a function prototype or declaration inside another
+   function.
+2. Pointer dereferencing into multi-dimensioned arrays does not work
+   properly.
+
+Use the makefile.dfq and dflatq.bld to build dflatq.lib, the D-Flat
+library that Quincy needs for its build.
+
+Use the makefile.qnc and qnc.lnk to build Quincy. It builds qnc.exe
+and quincy.hlp.  To run Quincy, use those two files and these header
+files.
+
+	ASSERT.H
+	CTYPE.H
+	DIR.H
+	ERRNO.H
+	MATH.H
+	SETJMP.H
+	STDARG.H
+	STDIO.H
+	STDLIB.H
+	STRING.H
+	TIME.H
+
+You can put the Quincy files in a subdirectory and make a path to it
+or execute it by specifying the path on the command line. Quincy will
+search for #include <file.h> files in the subdirectory where qnc.exe
+is run from and #include "file.h" files in the path where you are
+logged on.
+
+Al Stevens
+June, 1994
+CIS ID: 71101,1262
+

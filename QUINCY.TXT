@@ -1,0 +1,1898 @@
+; -----------------------------------------
+<QUINCY>
+The Quincy 4.0 C Interpreter
+
+    [..C Preprocessor]<preproc>
+    [..Standard C Header Files]<headers>
+    [..C Language Keywords]<keywords>
+; -----------------------------------------
+<HelpHelp>
+[<<]<Help>
+[>>]<ExtHelp>
+Help for Help
+Getting Into the Help System
+----------------------------
+There are three ways to get into the Help system:
+
+ 1. Execute commands on the [..Help]<Help> menu
+ 2. Press F1
+ 3. Press the Help command button on a dialog box.
+
+Contextual Help (F1)
+--------------------
+The F1 key provides contextual help--help for the
+part of Quincy that currently has the
+focus. You can press F1 with the action bar selected, 
+a pull-down menu displayed, a field on a dialog box
+selected, or while editing source code.
+
+The Help Command Button
+-----------------------
+The Help command button on a dialog box displays
+information about the dialog box and its purpose.
+The help window that displays when you press F1 with
+a dialog box field selected relates to the field
+itself.
+
+References to Other Help Windows
+--------------------------------
+A Help window can include a reference to another
+help window. That reference is highlighted like
+this: 
+
+    [..Help]<Help>
+
+You can Tab to the highlighted reference and press
+the Enter key to select the referenced help window.
+You can select it with the mouse by double-clicking
+on it.
+
+Definitions
+-----------
+Some references, such as [**function key]<shortcut>, are
+definitions of terms. These definitions are
+highlighted the same as references. When you select
+the definition, a window displays in the upper left
+corner of the desktop. The window contains the
+definition of the selected term and stays in view
+until you release the Enter key or the mouse
+button.
+
+Command Buttons on the Help Windows
+-----------------------------------
+Each help window contains these command buttons:
+
+  Close  This button closes the help window and
+         exits from the help system.
+  Back   This button changes to the help window
+         that you viewed before the current one.
+  Prev   This button changes to the help window
+         that logically preceeds the current one.
+  Next   This button changes to the help window
+         that logically follows the current one.
+
+Exiting from the Help System
+----------------------------
+You exit from the Help system by closing the current
+help window in one of these three ways:
+
+  1. Press the Esc key
+  2. Use the Close command button on the Help
+     window.
+  5. Double click the window's [..Control Box]<controlbox>.
+  4. Close the help window from its [..System Menu]<sysmenu>.
+
+; -----------------------------------------
+<ExtHelp>
+[<<]<HelpHelp>
+[>>]<KeysHelp>
+Extended Help
+
+; -----------------------------------------
+<KeysHelp>
+[<<]<ExtHelp>
+Keys Help
+Editor/Debugger Keys
+----------------
+  F2              Set/reset breakpoint
+  F3              Next search
+  F6              Open Watch Window
+  F7              Step to next statement
+  F8              Step over function call
+  F9              Run the program
+  F10 or Alt      Activate the menubar.
+  Esc             Deactivate the Action Bar.
+  Alt+letter      Open the associated pull-down menu.
+  Alt+W           Open the Watch window and add a watch variable.
+  Alt+F6          Switch to the Watch window.
+  Alt+X           Exit the application.
+
+  Arrow keys      Move the cursor one character.
+  Ctrl+arrow      Move the cursor one word.
+  Shift+arrow     Mark a [..block]<Block>.
+  Del             Delete character to the right of
+                  the cursor. If a [..block]<Block> is marked,
+                  delete the block.
+  Backspace       Delete character to the left of
+                  the cursor. If a block is marked,
+                  delete the block.
+  PgUp/PgDn       Scroll forward and back one page.
+  Ctrl+PgUp/PgDn  Scroll horizontally one page.
+  Shift+PgUP/PgDn Mark a [..block]<Block>.
+  Home/End        Move the cursor to the beginning
+                  and end of the line.
+  Ctrl+Home/End   Move the cursor to the beginning
+                  and end of the document.
+  Shift+Home/End  Mark a [..block]<Block>.
+  Tab             Tab to the next Tab Stop position.
+
+From the Watch window
+---------------------
+  Alt+F6             Switch to the editor
+  Ins                Add a watch variable.
+  Del                Delete the selected a watch variable.
+  Up and down arrow  Select watch variables
+
+[..Clipboard]<clipboard> Keys
+--------------
+  Shift+Del       [..Cut]<ID_CUT> the marked text to the
+                  Clipboard
+  Ctrl+Ins        [..Copy]<ID_COPY> the marked text to the
+                  Clipboard.
+  Shift+Ins       [..Paste]<ID_PASTE> the contents of the
+                  Clipboard into the document.
+
+[..Dialog Box]<dialog> Keys
+---------------
+  Tab             Move to the next control.
+  Shift+Tab       Move to the previous control.
+  Enter           Execute the control.
+  Esc             Close the Dialog Box with no
+                  action.
+Tutorial Keys
+-------------
+  Alt+C           Table of Contents
+  Alt+A           Current chapter exercise list
+  Alt+T           Display this exercise's help window
+  Alt+N           Load the next exercise in the chapter
+  Alt+P           Load the previous exercise in the chapter
+; -----------------------------------------
+;
+;  Following are menu command help windows
+;
+; -----------------------------------------
+<ID_NEW>
+[<<]<File>
+[>>]<ID_OPEN>
+The New Command
+This command opens a new, untitled source code
+file. When you use the [..Save]<ID_SAVE> or [..Save as]<ID_SAVEAS>
+command on the File menu the file gets a file name.
+; -----------------------------------------
+<ID_OPEN>
+[<<]<ID_NEW>
+[>>]<ID_SAVE>
+The Open Command
+This command opens an existing source code file and
+loads it. You select the file by filling
+in the [..File Open]<FileOpen> dialog box.
+; -----------------------------------------
+<ID_SAVE>
+[<<]<ID_OPEN>
+[>>]<ID_SAVEAS>
+The Save Command
+This command saves the source code into a disk file.
+The file name is the same as when the file was loaded.
+If the program contains an untitled document, this
+command works just like the [..Save as]<ID_SAVEAS> command.
+; -----------------------------------------
+<ID_SAVEAS>
+[<<]<ID_SAVE>
+[>>]<ID_PRINT>
+The Save As Command
+This command allows you to save the source code
+under a new file name. You specify the file's
+name by filling in the fields on the [..Save as]<SaveAs>
+dialog box. 
+; -----------------------------------------
+<ID_PRINT>
+[<<]<ID_SAVEAS>
+[>>]<ID_PRINTSETUP>
+The Print Command
+This command prints the source code.
+; -----------------------------------------
+<ID_PRINTSETUP>
+[<<]<ID_PRINT>
+[>>]<ID_DOS>
+The Print Setup Command
+This command displays the [..Print Setup]<PrintSetup> dialog
+box to allow you to change the printer port
+for the printout.
+; -----------------------------------------
+<ID_DOS>
+[<<]<ID_PRINT>
+[>>]<ID_EXIT>
+The DOS Command
+This command "shells" out to DOS. You return to
+Quincy from DOS by executing the DOS exit
+command at the DOS command line. 
+; -----------------------------------------
+<ID_EXIT>
+[<<]<ID_DOS>
+The Exit Command
+This command exits to DOS from Quincy. If
+there are any changes to the code that you have not
+saved, the program will ask if you want to save
+the file.
+; -----------------------------------------
+<ID_CUT>
+[<<]<Edit>
+[>>]<ID_COPY>
+The Cut Command
+This command is active only when the source
+code has a [..marked block]<Block>. The command
+deletes the text in the marked block, copies it to
+the [..Clipboard]<Clipboard>, and closes up the space in the
+code that the text previously occupied.
+; ----------------------------------------- 
+<ID_COPY>
+[<<]<ID_CUT>
+[>>]<ID_PASTE>
+The Copy Command
+This command is active only when the source
+code has a [..marked block]<Block>. The command
+copies the text in the marked block to the 
+[..Clipboard]<Clipboard>, and closes up the space in the code
+that the text previously occupied.
+; -----------------------------------------
+<ID_PASTE>
+[<<]<ID_COPY>
+[>>]<ID_DELETETEXT>
+The Paste Command
+This command is active only when the [..Clipboard]<Clipboard>
+contains text. The command inserts the text from the
+Clipboard into the source code at the current cursor
+location.
+; -----------------------------------------
+<ID_DELETETEXT>
+[<<]<ID_PASTE>
+The Delete Command
+This command is active only when the current
+document window has a [..marked block]<Block>. The command
+deletes the block of text, closing the space in the
+document where the text had been.
+; -----------------------------------------
+<ID_EXAMINE>
+[>>]<ID_OUTPUT>
+The Examine Command
+Use this command to examine and modify
+memory variables.
+<ID_OUTPUT>
+[<<]<ID_EXAMINE>
+[>>]<ID_FUNCTIONLIST>
+The Output Screen Command
+Use this command to view the output screen.
+<ID_FUNCTIONLIST>
+[<<]<ID_OUTPUT>
+[>>]<ID_FUNCTIONSTACK>
+The Function Command
+Use this command to view all of the functions
+in the program.
+<ID_FUNCTIONSTACK>
+[<<]<ID_FUNCTIONLIST>
+[>>]<ID_WATCH>
+The Function History Command
+Use this command to view the function stack
+from the current one back to main.
+<ID_WATCH>
+[<<]<ID_FUNCTIONSTACK>
+[>>]<ID_SWITCHWINDOW>
+The Watch Window Command
+Use this command to open the Watch Window
+<ID_SWITCHWINDOW>
+[<<]<ID_WATCH>
+The Switch Window Command
+Use this command to toggle the focus between the
+Watch Window and the Editor Window.
+<ID_RUN>
+[<<]<Run>
+[>>]<ID_STEP>
+The Run Command
+Use this command to run the program non-stop.
+<ID_STEP>
+[<<]<ID_RUN>
+[>>]<ID_STEPOVER>
+The Step Command
+Use this command to step through the program
+one source code line at a time.
+<ID_STEPOVER>
+[<<]<ID_STEP>
+[>>]<ID_STOP>
+The Step Over Command
+Use this command to step over a function,
+executing it but not stepping through it.
+<ID_STOP>
+[<<]<ID_STEPOVER>
+The Stop Command
+Use this command to stop the program.
+<ID_ADDWATCH>
+[<<]<Debug>
+[>>]<ID_BREAKPOINT>
+Add a watch variable
+Use this command to add a Watch variable
+to the Watch Window
+<ID_BREAKPOINT>
+[<<]<ID_ADDWATCH>
+[>>]<ID_DELBREAKPOINTS>
+Breakpoint on/off
+Use this command to toggle a breakpoint
+on/off at the current source code line.
+<ID_DELBREAKPOINTS>
+[<<]<ID_BREAKPOINT>
+Delete all breakpoints
+Use this command to delete all breakpoints.
+<ID_SEARCH>
+[<<]<Search>
+[>>]<ID_REPLACE>
+The Search Command
+This command opens the [..Search Text]<SearchTextDB> Dialog Box to
+allow you to search the source code for a
+matching string.
+<ID_REPLACE>
+[<<]<ID_SEARCH>
+[>>]<ID_SEARCHNEXT>
+The Replace Command
+This command opens the [..Replace Text]<ReplaceText> Dialog Box to
+allow you to search the source code for a
+matching string and replace it with a 
+different text string.
+<ID_SEARCHNEXT>
+[<<]<ID_REPLACE>
+The Next Command
+This command continues the most recent [..Search]<ID_SEARCH>
+command beginning at the current cursor position.
+<ID_TAB?>
+[<<]<Options>
+[>>]<ID_DISPLAY>
+The Tabs Command
+This command allows you to
+change the editor's tab settings.
+<ID_DISPLAY>
+[<<]<ID_TABS>
+[>>]<ID_SAVEOPTIONS>
+The Display Command
+This command displays the [..Display]<Display> dialog box to
+allow you to modify the screen's colors and
+configuration.
+<ID_HELPHELP>
+[<<]<Help>
+[>>]<ID_EXTHELP>
+Help for Help
+This command describes how to use the Help system.
+<ID_EXTHELP>
+[<<]<ID_HELPHELP>
+[>>]<ID_KEYSHELP>
+Extended Help
+Extended Help displays information about the
+application.
+<ID_KEYSHELP>
+[<<]<ID_EXTHELP>
+[>>]<ID_HELPINDEX>
+Keys Help
+This command displays a help window that shows the
+keystrokes that you use to operate the application.
+; -----------------------------------------
+<ID_HELPINDEX>
+[<<]<ID_KEYSHELP>
+[>>]<ID_ABOUT>
+Help Index
+The Help index lists the subjects covered in the
+Help database. You can go directly to a subject from
+the index by selecting the subject's name. 
+; -----------------------------------------
+<ID_ABOUT>
+[<<]<ID_HELPINDEX>
+The About Command
+This command displays a message that tells you
+about Quincy.
+; -----------------------------------------
+<ID_FILENAME>
+[>>]<ID_FILES>
+The Filename Field
+
+On the Open File dialog box:
+    Enter the name of the file you wish to
+    load into the source code editor, or enter
+    the file specification with wild cards
+    to display a list of files in the
+    [..Files]<ID_FILES> field.
+
+On the Save As dialog box:
+    Enter the name with which you wish to
+    save the file.
+; -----------------------------------------
+<ID_FILES>
+[<<]<ID_FILENAME>
+[>>]<ID_DRIVE>
+The Files Field
+Select a file from the listbox by using one
+of these methods:
+
+Keyboard:  Move the selection cursor to
+           the file name and press Enter.
+
+Mouse:     Double-click the file name.
+; -----------------------------------------
+<ID_DIRECTORY>
+[<<]<ID_FILES>
+[>>]<ID_DRIVE>
+The Directories Field
+Use this listbox to select a different
+subdirectory. Select by using one
+of these methods:
+
+Keyboard:  Move the selection cursor to
+           the subdirectory and press Enter.
+
+Mouse:     Double-click the subdirectory.
+; -----------------------------------------
+<ID_DRIVE>
+[<<]<ID_DIRECTORY>
+The Drives Field
+Use this listbox to select a different
+drive. Select a drive by using one
+of these methods:
+
+Keyboard:  Move the selection cursor to
+           the drive and press Enter.
+
+Mouse:     Double-click drive.
+; -----------------------------------------
+<ID_PRINTERPORT>
+[<<]<PrintSetup>
+The Printer Port Combo Box
+Use this combo box to change the printer
+port.
+; -----------------------------------------
+<ID_SEARCHFOR>
+[>>]<ID_REPLACEWITH>
+The Search For Text Entry Box
+Enter the text you want to search for in this
+text box. Press Enter or the OK command button
+to begin the search. Press Esc to forget it.
+Use the [..Match Upper/Lower Case Check Box]<ID_MATCHCASE> to
+select whether the search will match only if
+the case matches or if the search is insensitive
+to the case of the two strings.
+; -----------------------------------------
+<ID_REPLACEWITH>
+[<<]<ID_SEARCHFOR>
+[>>]<ID_MATCHCASE>
+The Replace With Text Entry Box
+Enter the text string that will replace
+the matching text string in the
+[..Search For Text Entry Box]<ID_SEARCHFOR>.
+; -----------------------------------------
+<ID_MATCHCASE>
+[<<]<ID_REPLACEWITH>
+[>>]<ID_REPLACEALL>
+The Match Upper/Lower Case Check Box
+Use this checkbox to select whether the search 
+will match only if the case matches or if the 
+search is insensitive to the case of the two 
+strings.
+; -----------------------------------------
+<ID_REPLACEALL>
+[<<]<ID_MATCHCASE>
+The Replace Every Match Check Box
+Use this checkbox to select whether the search 
+will replace every match in the document.
+; -----------------------------------------
+<ID_COLOR>
+[<<]<Display>
+[>>]<ID_MONO>
+The Color Option Button
+Select this option for a color display.
+; -----------------------------------------
+<ID_MONO>
+[<<]<ID_COLOR>
+[>>]<ID_REVERSE>
+The Mono Option Button
+Select this option for a monochrome display.
+; -----------------------------------------
+<ID_REVERSE>
+[<<]<ID_MONO>
+[>>]<ID_25LINES>
+The Reverse Option Button
+Select this option for a reverse monochrome
+display. You might find that this option
+works well with the LCD screens of some laptop
+computers, particularly when you turn off the
+[..Texture]<ID_TEXTURE> check box.
+; -----------------------------------------
+<ID_25LINES>
+[<<]<ID_REVERSE>
+[>>]<ID_43LINES>
+The 25 Lines Option Button
+Use this button to select a 25-line display.
+; -----------------------------------------
+<ID_43LINES>
+[<<]<ID_25LINES>
+[>>]<ID_50LINES>
+The 43 Lines Option Button
+Use this button to select a 43-line display.
+(EGA and VGA)
+; -----------------------------------------
+<ID_50LINES>
+[<<]<ID_43LINES>
+The 50 Lines Option Button
+Use this button to select a 50-line display.
+(VGA only)
+; -----------------------------------------
+<File>
+[>>]<Edit>
+The File Menu
+The File menu contains commands that
+open, save, and print files. The menu
+also has the command that exits the
+program. Following are the commands
+and associated [**function keys]<shortcut>.
+
+    [..New]<ID_NEW>
+    [..Open]<ID_OPEN>
+    [..Save]<ID_SAVE>     (Alt+S)
+    [..Save as]<ID_SAVEAS>
+    [..Print]<ID_PRINT>
+    [..Exit]<ID_EXIT>     (Alt+X or Alt+F4)
+
+[**Inactive]<inactive> commands display in a dim font.
+; -----------------------------------------
+<Edit>
+[<<]<File>
+[>>]<View>
+The Edit Menu
+The Edit menu contains commands that support
+text editing. Following are the commands and 
+associated [**function keys]<shortcut>.
+
+    [..Cut]<ID_CUT>           (Shift+Del)
+    [..Copy]<ID_COPY>          (Ctrl+Ins)
+    [..Paste]<ID_PASTE>         (Shift+Ins)
+    [..Delete]<ID_DELETETEXT>        (Del)
+
+[**Inactive]<inactive> commands display in a dim font.
+; -----------------------------------------
+<View>
+[<<]<Edit>
+[>>]<Run>
+The View Menu
+The View menu commands let you examine memory
+variables, the output screen, functions, and
+the Watch Window
+
+    [..Examine...]<ID_EXAMINE>
+    [..Output screen]<ID_OUTPUT>
+    [..Functions]<ID_FUNCTIONLIST>
+    [..Function history]<ID_FUNCTIONSTACK>
+    [..Watch window]<ID_WATCH>    (F6)
+    [..Switch windows]<ID_SWITCHWINDOW>  (ALT_F6)
+; -----------------------------------------
+<Run>
+[<<]<View>
+[>>]<Debug>
+The Run Menu
+This menu has commands to run, stop, and step
+through the program.
+
+    [..Run]<ID_RUN>         (F9)
+    [..Step]<ID_STEP>        (F7)
+    [..Step over]<ID_STEPOVER>   (F8)
+    [..Stop]<ID_STOP>
+; -----------------------------------------
+<Debug>
+[<<]<Run>
+[>>]<Search>
+The Debug Menu
+This menu has commands to let you set watchpoints
+and breakpoints and clear them all.
+
+    [..Add a watch variable]<ID_ADDWATCH> (ALT_W)
+    [..Breakpoint on/off]<ID_BREAKPOINT>    (F2)
+    [..Delete all breakpoints]<ID_DELBREAKPOINTS>
+; -----------------------------------------
+<Search>
+[<<]<Debug>
+[>>]<Options>
+The Search Menu
+The Search menu allows you to search the text
+for a matching string. The commands are:
+
+    [..Search]<ID_SEARCH>
+    [..Next]<ID_SEARCHNEXT>    (F3)
+; -----------------------------------------
+<Options>
+[<<]<Search>
+[>>]<Help>
+The Options Menu
+The Options menu contains commands that let you
+control the editor's behavior and the video display
+characteristics.
+You can save the options in a configuration file.
+Following are the commands on the Options menu.
+
+    [..Command Line]<ID_COMMANDLINE>
+    [..Display]<ID_DISPLAY>
+    [..Tabs]<ID_TABS>
+    [..Memory]<ID_MEMORY>
+; -----------------------------------------
+<Help>
+[<<]<Options>
+The Help Menu
+The Help menu provides information about the 
+application and the desktop. The selections are:
+
+    [..Help for help...]<ID_HELPHELP>
+    [..Extended help...]<ID_EXTHELP>
+    [..Keys help...]<ID_KEYSHELP>
+    [..Help index...]<ID_HELPINDEX>
+    [..About...]<ID_ABOUT>
+; -----------------------------------------
+;
+;  Following are dialog box help windows
+;
+; -----------------------------------------
+<FileOpen>
+The File Open Dialog Box
+
+Use this dialog box to open a new source code
+file.
+; -----------------------------------------
+<SaveAs>
+The Save As Dialog Box
+
+Use this dialog box to save a source code
+file under a name that you specify.
+; -----------------------------------------
+<PrintSetup>
+The Print Setup Dialog Box
+
+Use this dialog box to select a printer port.
+; -----------------------------------------
+<SearchTextDB>
+The Search Text Dialog Box
+
+Use this dialog box to search the source code
+file for a matching text string.
+; -----------------------------------------
+<ReplaceTextDB>
+The Replace Text Dialog Box
+
+Use this dialog box to search for a matching
+text string and replace it with a different
+string value.
+; -----------------------------------------
+<Display>
+The Display Dialog Box
+
+Use this dialog box to change how Quincy uses
+the video display.
+; -----------------------------------------
+;
+;  Following are keyword reference definition windows
+;
+; -----------------------------------------
+<inactive>
+An inactive menu command is one that is, for
+the moment, not available. The command becomes
+active at another time when conditions within
+the program require or permit its use.
+; -----------------------------------------
+<shortcut>
+Function keys are key combinations that
+you can press to execute a menu command
+without selecting the pull-down menu 
+itself. Not all menu commands have 
+function keys. The most frequently used 
+operations do.
+; -----------------------------------------
+<Block>
+Marking Text Blocks
+Marked text blocks affect the operation of these
+commands:
+
+    [..Cut]<ID_CUT>
+    [..Copy]<ID_COPY>
+    [..Paste]<ID_PASTE>
+    [..Delete]<ID_DELETETEXT>
+
+Mark a text block by using one of these operations:
+
+   Keyboard:
+   ---------
+   Hold the Shift key down and move the
+   keyboard cursor. The block will be marked in
+   reverse video.
+
+   To clear the marked block, release the Shift 
+   key and press any text entry or cursor movement
+   key.
+
+   Mouse:
+   ------
+   Click on the first or last character of the 
+   block. Hold the mouse button down and move 
+   the mouse cursor around. The marked block
+   will follow the mouse cursor.
+
+   To clear the marked block, release the mouse
+   cursor and click anywhere.
+
+; -----------------------------------------
+<Clipboard>
+The Clipboard
+The Clipboard is a scratchpad where you can save text
+that can be pasted into a different location in the
+same or another source code file. You save text with
+the [..Copy]<ID_COPY> and [..Cut]<ID_CUT> commands, and you paste text into
+from the Clipboard into a document with the [..Paste]<ID_PASTE>
+command. 
+; -----------------------------------------
+<stdio.h>
+stdio.h
+    [..fclose]<fclose>
+    [..fflush]<fflush>
+    [..fgetc]<fgetc>
+    [..fgets]<fgets>
+    [..fopen]<fopen>
+    [..fprintf]<fprintf>
+    [..fputc]<fputc>
+    [..fputs]<fputs>
+    [..fread]<fread>
+    [..fscanf]<fscanf>
+    [..fseek]<fseek>
+    [..ftell]<ftell>
+    [..fwrite]<fwrite>
+    [..getc]<getc>
+    [..getchar]<getchar>
+    [..gets]<gets>
+    [..printf]<printf>
+    [..putc]<putc>
+    [..putchar]<putchar>
+    [..puts]<puts>
+    [..remove]<remove>
+    [..rename]<rename>
+    [..rewind]<rewind>
+    [..scanf]<scanf>
+    [..sprintf]<sprintf>
+    [..sscanf]<sscanf>
+    [..tmpfile]<tmpfile>
+    [..tmpnam]<tmpnam>
+    [..ungetc]<ungetc>
+<fflush>
+fflush()
+#include <[..stdio.h]<stdio.h>>
+int fflush(FILE *fp)
+Flushes the data stream. Returns EOF on error, 0 otherwise.
+<printf>
+printf()
+#include <[..stdio.h]<stdio.h>>
+int printf(const char*,...);
+
+Prints a formatted string to the standard output file.  The
+characters in the string format are copied to the standard
+output file.  If a percent character (%) is encountered in
+the format string, it is assumed to be a conversion
+specification.  Each conversion specification converts
+exactly one argument that follows in the list.
+<getchar>
+getchar()
+#include <[..stdio.h]<stdio.h>>
+int getchar(void);
+
+Reads a single character from the standard input device. 
+Returns the character read, or EOF if end of file or a
+Ctrl-Z is read.  If the standard input device is the
+console keyboard, the character is echoed to the standard
+output device.
+<putchar>
+putchar()
+#include <[..stdio.h]<stdio.h>>
+int putchar(int c);
+
+Writes the character c to the standard output device. 
+Returns the character written, or a -1 on error.
+ 
+<gets>
+gets()
+#include <[..stdio.h]<stdio.h>>
+char *gets(char *s);
+
+Reads a string of characters from the standard input device.
+Characters are read from the file until either a newline or
+end of file is found.  Returns the address of buffer, or a
+zero on end of file.
+<puts>
+puts()
+#include <[..stdio.h]<stdio.h>>
+int puts(const char *s);
+
+Writes the null-terminated string to the standard output
+device followed by a newline character.  Returns the last
+character written, or EOF if an error occurs.
+<fopen>
+fopen()
+#include <[..stdio.h]<stdio.h>>
+FILE *fopen(const char *fname, const char *mode);
+
+Opens a disk file named by fname. Mode is one of these:
+
+    "a"   Append. The file is created if it does not exist.
+    "w"   Write. If the file exists, it is deleted first.
+    "r"   Read. The file must already exist.
+    "r+"  Read and write. The file must already exist.
+    "w+"  Read and write. If the file exists, it is deleted
+          first.
+    "a+"  Read and append. The file is created if it does 
+          not exist.
+
+You can add "t" to any of the above to use text mode and "b"
+to use binary mode.  In text mode a newline character in
+memory is converted to a carriage return, line feed when
+the data is written, and a carriage return line feed in the
+file is converted to a newline character when the data is 
+read. In binary mode, no translations are made.
+
+Returns a FILE pointer to be used in other file I/O
+functions. Returns NULL if the file cannot be opened.
+<fclose>
+fclose()
+#include <[..stdio.h]<stdio.h>>
+int fclose(FILE *fp);
+
+Closes a disk file previously opened by fopen.  Returns zero
+if successful, or EOF if an error occurs.
+ 
+<fgetc>
+fgetc()
+#include <[..stdio.h]<stdio.h>>
+int fgetc(FILE *fp);
+
+Reads a character from the file.  Returns the character
+read, or EOF on error or end of file.
+ 
+<getc>
+getc()
+#include <[..stdio.h]<stdio.h>>
+int getc(FILE *fp);
+
+Reads a character from the file.  Returns the character
+read, or EOF on error or end of file.
+<ungetc>
+ungetc()
+#include <[..stdio.h]<stdio.h>>
+int ungetc(int c, FILE *fp);
+
+Pushes the character c onto the file so that the next read
+will return c.  Only one character at a time should be
+pushed between reads if the file is stdin.
+<fputc>
+fputc()
+#include <[..stdio.h]<stdio.h>>
+int fputc(int c,FILE *fp);
+
+Writes the character c to the specified file. Returns the
+character written, or EOF on error.
+<putc>
+putc()
+#include <[..stdio.h]<stdio.h>>
+int putc(int c,FILE *fp);
+
+Writes the character c to the specified file. Returns the
+character written, or EOF on error.
+<fgets>
+fgets()
+#include <[..stdio.h]<stdio.h>>
+char *fgets(void *buf, int length ,FILE *fp);
+
+Reads characters from the file until a newline is
+encountered, length minus 1 characters have been read, or
+end of file is found.  Returns the address of the buffer,
+or NULL on end of file or error.
+<fputs>
+fputs()
+#include <[..stdio.h]<stdio.h>>
+int fputs(const char *s,FILE *fp);
+
+Writes the string to the file.  Returns the last character
+written, zero if the string is empty, or EOF on error.
+<fread>
+fread()
+#include <[..stdio.h]<stdio.h>>
+int fread(void *buf, int len, int num, FILE *fp);
+
+Reads a maximum of num items of len bytes each into
+memory at the address pointed to by buf from the file.  If
+the file was opened in text read or read/write mode, fread
+only reads up to and including a newline character.  If the
+file was opened in binary read mode, length times number
+characters are read if they are available. Returns the
+number of items read or 0 on EOF.
+ 
+<fwrite>
+fwrite()
+#include <[..stdio.h]<stdio.h>>
+int fwrite(const void *buf, int len, int num, FILE *fp);
+
+Writes num items of len characters each from the address
+pointed to by buf to the file. Returns the number of items
+written.
+<ftell>
+ftell()
+#include <[..stdio.h]<stdio.h>>
+long ftell(FILE *fp);
+
+Returns the current file position.
+<fseek>
+fseek()
+#include <[..stdio.h]<stdio.h>>
+int fseek(FILE *fp, long offset, int where);
+
+Seeks the file to a new character position.  The where
+parameter specifes how the offset parameter is applied to
+the character position of the file to derive the new
+character position following the seek. Returns the new
+position.  Offset can be positive or negative.
+    
+   SEEK_SET: offset added to current character position.
+   SEEK_CUR: offset added to last character position.
+   SEEK_END: offset added to first character position.
+
+Returns 0 for a successful seek and -1 if an error occurs.
+<rename>
+rename()
+#include <[..stdio.h]<stdio.h>>
+int rename(const char *oldname, const char *newname);
+
+Renames an unopened file. Oldname points to the old file
+name. Newname points to the new file name.
+<remove>
+remove()
+#include <[..stdio.h]<stdio.h>>
+int remove(const char *name);
+
+Removes (deletes) the named file from the file system.
+<tmpfile>
+tmpfile()
+#include <[..stdio.h]<stdio.h>>
+FILE *tmpfile(void);
+
+Creates a temporary file in "wb+" mode. The file is deleted
+when the program terminates normally.
+<tmpnam>
+tmpnam()
+#include <[..stdio.h]<stdio.h>>
+char *tmpnam(char *fn);
+
+Creates a unique, unused file name. Returns a pointer to the
+unique name. If the argument is not NULL, copies the filename
+to the address pointed to by the argument.
+<rewind>
+rewind()
+#include <[..stdio.h]<stdio.h>>
+void rewind(FILE *fp);
+
+Seeks the file to its zero character position.
+<scanf>
+scanf()
+#include <[..stdio.h]<stdio.h>>
+int scanf(const char *fmt,...);
+
+Reads characters from the standard input file and converts
+them using the conversion string format (same as for
+[..printf]<printf>).  The arguments must be pointers to the appropriate
+data types. Since float is the same as double, always use
+the l modifier (%lf).
+<fprintf>
+fprintf()
+#include <[..stdio.h]<stdio.h>>
+int fprintf(FILE *fp, const char *fmt, ...);
+
+Performs format conversion of the arguments, exactly like
+[..printf]<printf>, but writes its output to the file instead of to the
+standard output file.
+<fscanf>
+fscanf()
+#include <[..stdio.h]<stdio.h>>
+int fscanf(FILE *fp, char *fmt, ...);
+
+Reads characters from the file and converts them using the
+conversion string format (same as for [..printf]<printf>).  The
+arguments must be pointers to the appropriate data types.
+Since float is the same as double, always use the l
+modifier (%lf).
+<sprintf>
+sprintf()
+#include <[..stdio.h]<stdio.h>>
+int sprintf(char *buf, const char *fmt, ...);
+
+Performs format conversion of the arguments, exactly like
+printf, but writes its output to the buffer instead of the
+standard output file.
+<sscanf>
+sscanf()
+#include <[..stdio.h]<stdio.h>>
+int sscanf(char *buf, const char *fmt, ...);
+
+Performs format input conversion of the arguments, exactly
+like [..scanf]<scanf> but reads its input from the buffer instead of
+the standard input file.
+<ctype.h>
+ctype.h
+    [..isdigit]<isdigit>
+    [..isupper]<isupper>
+    [..islower]<islower>
+    [..isalpha]<isalpha>
+    [..isprint]<isprint>
+    [..isalnum]<isalnum>
+    [..isspace]<isspace>
+    [..toupper]<toupper>
+    [..tolower]<tolower>
+<isdigit>
+isdigit()
+#include <[..ctype.h]<ctype.h>>
+int isdigit(int c);
+
+Returns a true value (1) if c is in the range '0' - '9'. 
+Otherwise returns false (0).
+<isupper>
+isupper()
+#include <[..ctype.h]<ctype.h>>
+int isupper(int c);
+
+Returns a true value (1) if c is 'A' - 'Z'.  Otherwise
+returns false (0).
+<islower>
+islower()
+#include <[..ctype.h]<ctype.h>>
+int islower(int c);
+
+Returns a true value (1) if c is 'a' - 'z'.  Otherwise
+returns false (0).
+<isalpha>
+isalpha()
+#include <[..ctype.h]<ctype.h>>
+int isalpha(int c);
+
+Returns a true value (1) if c is 'A' - 'Z' or 'a' - 'z'. 
+Otherwise returns false (0).
+<isprint>
+isprint()
+#include <[..ctype.h]<ctype.h>>
+int isprint(int c);
+
+Returns a true value (1) if c is a printable character 
+(between 32 and 127).  Otherwise returns false (0).
+<isalnum>
+isalnum()
+#include <[..ctype.h]<ctype.h>>
+int isalnum(int c);
+
+Returns a true value (1) if c is in one of the character
+ranges 'a' - 'z', 'A' - 'Z', or '0' - '9'.  Otherwise
+returns false (0).
+<isspace>
+isspace()
+#include <[..ctype.h]<ctype.h>>
+int isspace(int c);
+
+Returns a true value (1) if c is ' ', '\t', '\n', '\v', '\f',
+or '\r'.  Otherwise returns false (0).
+<toupper>
+toupper()
+#include <[..ctype.h]<ctype.h>>
+int toupper(int c);
+
+If c is a lower case alphabetic character, returns its upper
+case equivalent, otherwise returns c.
+<tolower>
+tolower()
+#include <[..ctype.h]<ctype.h>>
+int tolower(int c);
+
+If c is an upper case alphabetic character, returns its
+lower case equivalent, otherwise returns c.
+<atoi>
+atoi()
+#include <[..ctype.h]<stdlib.h>>
+int atoi(const char *s);
+
+Converts the string containing the ASCII representation of a
+decimal number to an int.  The string consists of optional
+leading spaces or tabs, an optional plus or minus sign (+
+or -) followed by one or more decimal digits.  Returns the
+value of the ASCII number string.
+<atol>
+atol()
+#include <[..ctype.h]<stdlib.h>>
+long atol(const char *s);
+
+Converts the string containing the ASCII representation of a
+decimal number to a long.  The string consists of optional
+leading spaces or tabs, an optional plus or minus sign (+
+or -) followed by one or more decimal digits.  Returns the
+value of the ASCII number string.
+<setjmp.h>
+setjmp.h
+    [..setjmp]<setjmp>
+    [..longjmp]<longjmp>
+<setjmp>
+setjmp()
+#include <[..setjmp.h]<setjmp.h>>
+int setjmp(jmp_buf jb);
+
+Sets a jmp_buf for use by [..longjmp]<longjmp>. Returns 0. When the
+program calls longjmp, execution resumes just past the
+matching setjmp with the non-zero return value passed as
+the second parameter to longjmp.
+
+Use setjmp as the conditional expression in [..if]<if> and
+[..switch]<switch> statements such as:
+
+   if (setjmp(jb) == 0)  {
+       /* first execution */
+   }
+   else   {
+       /* longjmp executed for this jmp_buf */
+   }
+<longjmp>
+longjmp()
+#include <[..setjmp.h]<setjmp.h>>
+void longjmp(jmp_buf jb, int rtn);
+
+Jumps to the most recent [..setjmp]<setjmp> test associated with the
+jmp_buf.  The rtn value is the value returned by the setjmp
+expression.
+<stdlib.h>
+stdlib.h
+    [..abort]<abort>
+    [..abs]<abs>
+    [..atof]<atof>
+    [..atoi]<atoi>
+    [..atol]<atol>
+    [..calloc]<calloc>
+    [..exit]<exit>
+    [..free]<free>
+    [..malloc]<malloc>
+    [..max]<max>
+    [..min]<min>
+    [..system]<system>
+<abort>
+abort()
+#include <[..stdlib.h]<stdlib.h>>
+void abort(void);
+
+Aborts the program.
+<malloc>
+malloc()
+#include <[..stdlib.h]<stdlib.h>>
+void *malloc(int size);
+
+Allocates a block of memory of size bytes from the heap.
+Returns a pointer to the block or a null pointer if the
+memory is not available.
+<calloc>
+calloc()
+#include <[..stdlib.h]<stdlib.h>>
+void *calloc(int size, int n);
+
+Allocates n blocks of memory of size bytes each from the
+heap and initializes the blocks to zero. Returns a pointer
+to the block or a null pointer if the memory is not
+available.
+<free>
+free()
+#include <[..stdlib.h]<stdlib.h>>
+int free(void *bf);
+
+Returns the block of memory pointed to by bf that was
+previously allocated by a call to malloc or calloc.
+<exit>
+exit()
+#include <[..stdlib.h]<stdlib.h>>
+void exit(int n);
+
+The program terminates and returns the parameter to the
+operating system. it flushes all output streams and closes
+all open stream files.
+<system>
+system()
+#include <[..stdlib.h]<stdlib.h>>
+int system(const char *cmd);
+
+Executes the DOS command interpreter (usually the program
+in COMMAND.COM) and passes it the DOS command found in cmd.
+<min>
+min()
+#include <[..stdlib.h]<stdlib.h>>
+#define min(a,b) ((a)<(b)?(a):(b))
+
+Returns the lesser of the two arguments.
+<max>
+max()
+#include <[..stdlib.h]<stdlib.h>>
+#define max(a,b) ((a)>(b)?(a):(b))
+
+Returns the greater of the two arguments.
+<string.h>
+string.h
+    [..memset]<memset>
+    [..strcmp]<strcmp>
+    [..strncmp]<strncmp>
+    [..*strcpy]<*strcpy>
+    [..*strncpy]<*strncpy>
+    [..strlen]<strlen>
+    [..*strcat]<*strcat>
+    [..*strncat]<*strncat>
+<memset>
+memset()
+#include <[..string.h]<string.h>>
+void *memset(void *s,int c,int n)
+
+Fills the memory buffer pointed to by s with the character
+c. Fills n characters.
+<strcmp>
+strcmp()
+#include <[..string.h]<string.h>>
+int strcmp(const char *s1, const char *s2);
+
+Compares the two strings.  The comparison stops when a null
+terminator is encountered in either of the two strings. 
+Returns a 0 if the two strings are identical, less than
+zero if s2 is greater than s1, and greater than zero if s1
+is greater than s2.
+<strncmp>
+strncmp()
+#include <[..string.h]<string.h>>
+int strncmp(const char *s1, const char *s2, int n);
+
+Compares the two strings.  The comparison stops when a null
+terminator is encountered in either of the two strings or
+when n number of bytes are compared.  Returns a 0 if the
+two strings are identical, less than zero if s2 is greater
+than s1, and greater than zero if s1 is greater than s2.
+<strcpy>
+strcpy()
+#include <[..string.h]<string.h>>
+char *strcpy(char *s1, const char *s2);
+              
+Copies s2 into s1.  The copy stops after the null
+character is copied.
+<strncpy>
+strncpy()
+#include <[..string.h]<string.h>>
+char *strncpy(char *s1, const char *s2, int n);
+
+Copies s2 into s1.  The comparison stops after the null
+character is copied or after n number of bytes are copied.
+<strlen>
+strlen()
+#include <[..string.h]<string.h>>
+int strlen(const char *s);
+
+Returns the length of the null-terminated string. The length
+does not include the null terminator.
+<strcat>
+strcat()
+#include <[..string.h]<string.h>>
+char *strcat(char *s2, const char *s1);
+
+Concatenates the string pointed to by s2 onto the string
+pointed to by s1.  The calling program must assure that s1
+has enough space for the concatenation.
+<strncat>
+strncat()
+#include <[..string.h]<string.h>>
+char *strncat(char *s2, const char *s1, int n);
+
+Concatenates the string pointed to by s2 onto the string
+pointed to by s1. Copies at most n bytes or until a null
+terminator is copied from s2. The calling program must
+assure that s1 has enough space for the concatenation.
+<dir.h>
+dir.h
+    [..findfirst]<findfirst>
+    [..findnext]<findnext>
+<findfirst>
+findfirst()
+#include <[..dir.h]<dir.h>>
+int findfirst(const char *path, struct ffblk *ff, int mode);
+<findnext>
+findnext()
+#include <[..dir.h]<dir.h>>
+int findnext(struct ffblk *ff);
+<math.h>
+math.h
+    [..acos]<acos>
+    [..asin]<asin>
+    [..atan]<atan>
+    [..ceil]<ceil>
+    [..cos]<cos>
+    [..cosh]<cosh>
+    [..exp]<exp>
+    [..fabs]<fabs>
+    [..floor]<floor>
+    [..sin]<sin>
+    [..sinh]<sinh>
+    [..sqrt]<sqrt>
+    [..tan]<tan>
+    [..tanh]<tanh>
+    [..log]<log>
+    [..log10]<log10>
+    [..pow]<pow>
+    [..atan2]<atan2>
+<abs>
+abs()
+#include <[..stdlib.h]<stdlib.h>>
+int abs(int n);
+
+Returns the absolute integer value of the integer argument.
+<acos>
+acos()
+#include <[..math.h]<math.h>>
+double acos(double x);
+
+Returns the arc cosine of x.
+<asin>
+asin()
+#include <[..math.h]<math.h>>
+double asin(double x);
+
+Returns the arc sine of x.
+<atan>
+atan()
+#include <[..math.h]<math.h>>
+double atan(double x);
+
+Returns the arc tangent of x.
+<ceil>
+ceil()
+#include <[..math.h]<math.h>>
+double ceil(double x);
+
+Returns the smallest integer greater than or equal to x. The
+returned value is a double.
+<cos>
+cos()
+#include <[..math.h]<math.h>>
+double cos(double x);
+
+Returns the cosine of x.
+<cosh>
+cosh()
+#include <[..math.h]<math.h>>
+double cosh(double x);
+
+Returns the hyperbolic cosine of x.
+<exp>
+exp()
+#include <[..math.h]<math.h>>
+double exp(double x);
+
+Returns the exponential function of x.
+<fabs>
+fabs()
+#include <[..math.h]<math.h>>
+double fabs(double x);
+
+Returns the absolute value of x. The value returned is a
+double.
+<floor>
+floor()
+#include <[..math.h]<math.h>>
+double floor(double x);
+
+Returns the largest integer less than or equal to x. The
+returned value is a float.
+<sin>
+sin()
+#include <[..math.h]<math.h>>
+double sin(double x);
+
+Returns the sine of x.
+<sinh>
+sinh()
+#include <[..math.h]<math.h>>
+double sinh(double x);
+
+Returns the hyperbolic sine of x.
+<sqrt>
+sqrt()
+#include <[..math.h]<math.h>>
+double sqrt(double x);
+
+Returns the square root of x.
+<tan>
+tan()
+#include <[..math.h]<math.h>>
+double tan(double x);
+
+Returns the tangent of x.
+<tanh>
+tanh()
+#include <[..math.h]<math.h>>
+double tanh(double x);
+
+Returns the hyperbolic tangent of x.
+<log>
+log()
+#include <[..math.h]<math.h>>
+double log(double x);
+
+Returns the natural logarithm of x.
+<log10>
+log10()
+#include <[..math.h]<math.h>>
+double log10(double x);
+
+Returns the base 10 logarithm of x.
+<pow>
+pow()
+#include <[..math.h]<math.h>>
+double pow(double x, double y);
+
+Returns x raised to the yth power.
+<atan2>
+atan2()
+#include <[..math.h]<math.h>>
+double atan2(double x, double y);
+
+Returns the arc tangent of y/x.
+<atof>
+atof()
+#include <[..math.h]<stdlib.h>>
+float atof(const char *s);
+
+Converts the string containing the ASCII representation of a
+decimal number to a float.  The string consists of optional
+leading spaces or tabs, an optional plus or minus sign (+
+or -) followed by one or more decimal digits.  Returns the
+value of the ASCII number string.  The string passed to
+atof can contain a decimal point with digits to the right of
+the decimal point.  It can also take the form of a floating
+point constant.
+<time.h>
+time.h
+
+Declares functions and data structures to support
+time and date operations
+
+    [..struct tm]<tm>
+
+    [..asctime]<asctime>
+    [..ctime]<ctime>
+    [..difftime]<difftime>
+    [..gmtime]<gmtime>
+    [..localtime]<localtime>
+    [..mktime]<mktime>
+    [..time]<time>
+<tm>
+struct tm
+/* --------- broken-down time structure ---------- */
+struct tm
+{
+  int   tm_sec;    /* seconds (0-61)               */
+  int   tm_min;    /* minutes (0-59)               */
+  int   tm_hour;   /* hours   (0-23                */
+  int   tm_mday;   /* day of the month (1-31)      */
+  int   tm_mon;    /* months since January (0-11)  */
+  int   tm_year;   /* years since 1900             */
+  int   tm_wday;   /* days since Sunday (0-6)      */
+  int   tm_yday;   /* days since January 1 (0-365) */
+  int   tm_isdst;  /* Daylight Savings Time flag   */
+};
+<asctime>
+[<<]<time.h>
+[>>]<ctime>
+asctime()
+#include <[..time.h]<time.h>>
+char *asctime(const struct tm *tp);
+Converts a [..struct tm]<tm> object to a displayable string in
+this format:
+
+   Sun Apr 10 15:22:30 1994/n
+
+Returns a pointer to the converted string.
+<ctime>
+[<<]<asctime>
+[>>]<difftime>
+ctime()
+#include <[..time.h]<time.h>>
+char *ctime(const time_t *timer);
+Converts time pointed to by timer to a displayable string in
+this format:
+
+   Sun Apr 10 15:22:30 1994/n
+
+Returns a pointer to the converted string.
+
+The time_t variable is the same as the type returned by the 
+[..time]<time> function.
+<difftime>
+[<<]<ctime>
+[>>]<gmtime>
+difftime()
+#include <[..time.h]<time.h>>
+double difftime(time_t t1, time_t t0);
+
+Returns the difference (t1 - t0) in seconds between two 
+calendar times.
+
+The time_t variables are the same as the type returned by 
+the [..time]<time> function.
+<gmtime>
+[<<]<difftime>
+[>>]<localtime>
+gmtime()
+#include <[..time.h]<time.h>>
+struct tm *gmtime(const time_t *timer);
+Converts time into a [..struct tm]<tm> object. Returns a pointer to
+the converted time.
+
+The time_t variable is the same as the type returned by the 
+[..time]<time> function.
+<localtime>
+[<<]<gmtime>
+[>>]<mktime>
+localtime()
+#include <[..time.h]<time.h>>
+struct tm *localtime(const time_t *timer);
+Converts time into a [..struct tm]<tm> object expressed as local time.
+
+The time_t variable is the same as the type returned by the 
+[..time]<time> function.
+<mktime>
+[<<]<localtime>
+[>>]<time>
+mktime()
+#include <[..time.h]<time.h>>
+time_t mktime(struct tm *tp);
+Converts a [..struct tm]<tm> object into a time_t object.
+
+Returns a time_t variable of the type as that returned by the 
+[..time]<time> function.
+<time>
+[<<]<mktime>
+time()
+#include <[..time.h]<time.h>>
+time_t time(time_t *timer);
+Returns the current date and time expressed as an integral value.
+<assert.h>
+assert.h
+    [..assert]<assert>
+    [..NDEBUG]<assert>
+<assert>
+assert()
+#include <[..assert.h]<assert.h>>
+void assert(int n);
+
+Implemented as a macro. If the condition returned by n is 
+true (not zero), the macro does nothing. Otherwise it displays
+a message on the screen identifying the condition and the file
+and line number where it occurred.
+
+When NDEBUG is defined, this macro has no effect.
+
+You can put assert statements throughout your code to
+capture unexpected program bugs. For example:
+
+    assert(cp != NULL)
+    *cp++ = 'x';
+
+When your code is checked out, put this statement:
+    #define NDEBUG
+ahead of this statement:
+    #include <assert.h>
+<errno.h>
+errno.h
+
+Defines the system variable errno. The standard library sets
+errno to non-zero values when error conditions occur.
+<stdarg.h>
+stdarg.h
+
+Defines macros that support functions with
+variable argument lists.
+
+    [..va_list]<va_list>
+    [..va_start]<va_start>
+    [..va_arg]<va_arg>
+    [..va_end]<va_end>
+<va_list>
+va_list
+#include <[..stdarg.h]<stdarg.h>>
+
+A type used to establish the starting place
+of a variable argument list. Referenced in
+[..va_start]<va_start>, [..va_arg]<va_arg>, and [..va_end]<va_end> macros.
+<va_start>
+va_start()
+#include <[..stdarg.h]<stdarg.h>>
+void va_start([..va_list]<va_list> ap, parm)
+
+Established the start of a variable argument
+list scan. The second argument is is the identifier
+of the rightmost argument before the ellipse.
+<va_arg>
+va_arg()
+#include <[..stdarg.h]<stdarg.h>>
+type va_arg([..va_list]<va_list> ap, type)
+
+Retrieves the next argument from a variable argument
+list. type is the type of the argument.
+<va_end>
+va_end()
+#include <[..stdarg.h]<stdarg.h>>
+void va_end([..va_list]<va_list> ap)
+
+Ends the variable argument list scan.
+<keywords>
+C Language Keywords
+    [..auto]<auto>         [..goto]<goto>
+    [..break]<break>        [..if]<if>
+    [..case]<case>         [..int]<int>
+    [..char]<char>         [..long]<long>
+    [..const]<const>        [..return]<return>
+    [..continue]<continue>     [..sizeof]<sizeof>
+    [..default]<default>      [..static]<static>
+    [..do]<do>           [..struct]<struct>
+    [..double]<double>       [..switch]<switch>
+    [..else]<else>         [..typedef]<typedef>
+    [..enum]<enum>         [..union]<union>
+    [..float]<float>        [..void]<void>
+    [..for]<for>          [..while]<while>
+<main>
+main()
+int main(int argc, char *argv[])
+
+Every C program has a main function. It is the entry point
+of the program. The program terminates when the main
+function returns or when the program calls the [..exit]<exit>
+function.
+
+The main function should return an integer, which the
+operating system may use to determine the completion status
+of the program. By convention, a zero return signifies a
+successful completion, and anything else signifies an error
+status upon completion. You may code a main function with no
+return statement.
+
+The argc parameter indicates the number of command line
+arguments.  There is always at least one argument, which is
+the name of the running program. The argv parameter points
+to an array of char pointers, each of which points to a
+null-terminated command line argument string.
+
+You may code main with no arguments.
+<if>
+if
+C language if statement:
+
+    if ([..condition]<condition>)
+        statement(s);
+    else
+        statement(s);
+
+If the condition is true, the first set of statements are
+executed.  Otherwise the second set are executed. The else
+statement and its associated statements are optional.
+<while>
+while
+C language while looping statement:
+
+    while ([..condition]<condition>)
+        statement(s);
+
+The expression is evaluated. If it is true, the statements
+are executed after which the program returns to test the
+expression again. The loop continues until the expression
+is false or a statement in the loop executes a [..break]<break> or
+[..return]<return> statement.
+<condition>
+(condition)
+Parenthetical condition expression returning true or false
+value. The expression may be an arithmetical expression, an
+assignment, or a relational expression. The expression may
+include function calls. Used in [..if]<if>, [..while]<while>, and [..for]<for>
+statements.
+<for>
+for
+C language for looping statement:
+
+    for (expr1; expr2; expr3)
+        statement(s);
+
+The first expression is evaluated. If the second expression
+is true, the statements are executed after which the third
+expression is evaluated. Then the program returns to test
+the second expression again. The loop continues until the
+second expression is false or a statement in the loop
+executes a [..break]<break> or [..return]<return> statement.
+<do>
+do while
+C language do...while looping statement:
+
+    do
+        statement(s);
+    while ([..condition]<condition>)
+
+The statements are executed after which the program tests
+the expression. The loop continues until the expression is
+false or a statement in the loop executes a [..break]<break> or 
+[..return]<return> statement.
+<switch>
+switch
+C Language switch statement
+
+    switch ([..condition]<condition>)  {
+        case <int constant>:
+            <statements>
+            break;
+        default:
+            <statements>
+            break;
+    }
+<struct>
+struct
+C Language struct
+
+Defines a record structure
+
+    struct sname {
+        <type declaration>;
+        <type declaration>;
+    };
+<union>
+union
+C Language struct
+
+Defines a union
+
+    union sname {
+        <type declaration>;
+        <type declaration>;
+    };
+
+The elements all occupy the same space.
+<break>
+break
+Breaks out of a [..for]<for> or [..while]<while> loop.
+or a [..switch]<switch> [..case]<case> statement.
+<continue>
+continue
+Returns to the top of a [..for]<for> or [..while]<while> loop.
+<case>
+case
+See the [..switch]<switch> statement.
+<char>
+char
+8-bit character data type
+<int>
+int
+16-bit integer data type
+<long>
+long
+32-bit integer data type
+<float>
+float
+floating point number
+<double>
+double
+double-precision floating point number
+<const>
+const
+Type qualifier. The type is const and cannot
+be modified after initialization.
+<auto>
+auto
+Automatic storage class. The variable is local to
+the function block.
+<default>
+default
+See the [..switch]<switch> statement.
+<else>
+else
+See the [..if]<if> statement.
+<enum>
+enum
+Enumerated data type.
+
+enum Color { Red, Green, Blue };
+<goto>
+goto
+
+Jump to a statement label.
+<return>
+return
+Return from a function.
+Can include a value to return.
+<sizeof>
+sizeof
+Return the size of the type or variable following.
+<static>
+static
+Static storage class. External variable has file scope.
+Local variable has local scope and retains value between
+executions.
+<typedef>
+typedef
+Redefine a type with a unique identifier.
+
+typedef struct x* XStructPtr;
+<void>
+void
+1. Empty argument list in a function prototype.
+2. Return type of function that returns nothing.
+3. Type of typeless pointer.
+<preproc>
+C Preprocessor
+    [..#include]<#include>
+    [..#ifdef]<#ifdef>
+    [..#else]<#else>
+    [..#ifndef]<#ifndef>
+    [..#define]<#define>
+    [..#endif]<#endif>
+    [..#undef]<#undef>
+    [..#if]<#if>
+    [..#elif]<#elif>
+<#include>
+#include
+Include the named source code file.
+
+  #include <fn.h>   Includes compiler header
+  #include "fn.h"   Includes application header
+<#ifdef>
+#ifdef
+Include following source code lines to next [..#else]<#else>, 
+[..#elif]<#elif>, or [..#endif]<#endif> only if named global has been defined.
+<#else>
+#else
+Include following source code lines to next [..#else]<#else>, 
+[..#elif]<#elif>, or [..#endif]<#endif> only if previous
+condition tested by [..#if]<#if>, [..#ifdef]<#ifdef>, or [..#elif]<#elif> is false
+<#ifndef>
+#ifndef
+Reverse of [..#ifdef]<#ifdef>.
+<#define>
+#define
+Define a macro:
+  #define GLOBAL 123
+  #define foo(x,y) bar(y,x)
+<#endif>
+#endif
+Terminates [..#if]<#if>, [..#ifdef]<#ifdef>, [..#ifndef]<#ifndef>
+<#undef>
+#undef
+Removes a macro definition
+<#if>
+#if
+Include following source code lines to next [..#else]<#else>, 
+[..#elif]<#elif>, or [..#endif]<#endif> only if expression is true.
+<#elif>
+#elif
+Equivalent of [..#else]<#else> and [..#if]<#if> concatenated.
+<headers>
+Standard C Header Files
+    [..assert.h]<assert.h>
+    [..ctype.h]<ctype.h>
+    [..date.h]<date.h>
+    [..dir.h]<dir.h>
+    [..errno.h]<errno.h>
+    [..math.h]<math.h>
+    [..setjmp.h]<setjmp.h>
+    [..stdarg.h]<stdarg.h>
+    [..stdio.h]<stdio.h>
+    [..stdlib.h]<stdlib.h>
+    [..string.h]<string.h>
+    [..time.h]<time.h>
+<end>
+

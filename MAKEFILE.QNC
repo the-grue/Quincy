@@ -1,0 +1,43 @@
+#-------------------------------------------------------------------
+#        Q U I N C Y   M A K E F I L E  -  Borland C++ 4.0
+#-------------------------------------------------------------------
+
+all : qnc.exe quincy.hlp
+
+#------------------------------------------------
+# Set COMPILER to where you installed your compiler
+#------------------------------------------------
+COMPILER = d:\bc4
+#------------------------------------------------
+# Set DFLAT to where you installed D-Flat
+DFLAT = c:\dflat
+#------------------------------------------------
+MODEL = l
+#------------------------------------------------
+# NOTE: Delete the DEBUG and LINKDEBUG macros to 
+# build without debugging information in the .EXE
+#------------------------------------------------
+#DEBUG = -v
+#LINKDEBUG = /m /v
+#------------------------------------------------
+COMPILE = bcc -Od $(DEBUG) -c -d -m$(MODEL) -I$(DFLAT)
+LINK= tlink $(LINKDEBUG) $(COMPILER)\lib\c0$(MODEL) 
+LIBS= $(COMPILER)\lib\emu $(COMPILER)\lib\math$(MODEL) $(COMPILER)\lib\c$(MODEL)
+#------------------------------------------------
+
+.c.obj:
+    $(COMPILE) {$*.c }
+
+qnc.exe : qnc.obj qdialogs.obj qmenus.obj print.obj \
+	  qinterp.obj preproc.obj preexpr.obj watch.obj break.obj\
+	  expr.obj func.obj linker.obj debugger.obj\
+	  primary.obj scanner.obj stack.obj qconfig.obj\
+	  stmt.obj symbol.obj symbols.obj sys.obj errs.obj \
+	c:\dflat\dflatq.lib
+    $(LINK) @qnc.lnk,qnc,$(DFLAT)\dflatq $(LIBS)
+
+quincy.hlp : quincy.txt
+	$(DFLAT)\huffc quincy.txt quincy.hlp
+	$(DFLAT)\fixhelp quincy
+
+
