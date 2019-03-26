@@ -449,8 +449,8 @@ CONFIG cfg = {
     TRUE,            /* Application Border          */
     TRUE,            /* Application Title           */
     TRUE,            /* Status Bar                  */
-    TRUE,            /* Textured application window */
 #endif
+    TRUE,            /* Textured application window (moved outside ifdef) */
     25,              /* Number of screen lines      */
 	"Lpt1",			 /* Printer Port                */
 	66,              /* Lines per printer page      */

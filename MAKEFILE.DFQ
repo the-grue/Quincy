@@ -7,7 +7,7 @@ all : dflatq.lib huffc.exe fixhelp.exe
 
 # NOTE: Set DRIVE to match where you installed your compiler
 #-------------------------------------------------------------------
-DRIVE = d:\bc4
+DRIVE = c:\borlandc
 #-------------------------------------------------------------------
 MODEL = l
 #-------------------------------------------------------------------
